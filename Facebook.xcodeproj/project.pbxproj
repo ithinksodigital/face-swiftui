@@ -14,6 +14,10 @@
 		89E66BC829AE7E140066641E /* FacebookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E66BC729AE7E140066641E /* FacebookTests.swift */; };
 		89E66BD229AE7E140066641E /* FacebookUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E66BD129AE7E140066641E /* FacebookUITests.swift */; };
 		89E66BD429AE7E140066641E /* FacebookUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E66BD329AE7E140066641E /* FacebookUITestsLaunchTests.swift */; };
+		89E66BE229AEAF800066641E /* Stories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E66BE129AEAF800066641E /* Stories.swift */; };
+		89E66BE429AF80650066641E /* Posts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E66BE329AF80650066641E /* Posts.swift */; };
+		89E66BE729AF88590066641E /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E66BE629AF88590066641E /* PostView.swift */; };
+		89E66BE929AF891B0066641E /* StoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E66BE829AF891B0066641E /* StoryView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +48,10 @@
 		89E66BCD29AE7E140066641E /* FacebookUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FacebookUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		89E66BD129AE7E140066641E /* FacebookUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookUITests.swift; sourceTree = "<group>"; };
 		89E66BD329AE7E140066641E /* FacebookUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		89E66BE129AEAF800066641E /* Stories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stories.swift; sourceTree = "<group>"; };
+		89E66BE329AF80650066641E /* Posts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Posts.swift; sourceTree = "<group>"; };
+		89E66BE629AF88590066641E /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
+		89E66BE829AF891B0066641E /* StoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +102,7 @@
 		89E66BB529AE7E100066641E /* Facebook */ = {
 			isa = PBXGroup;
 			children = (
+				89E66BE029AEAF560066641E /* Models */,
 				89E66BB629AE7E100066641E /* FacebookApp.swift */,
 				89E66BB829AE7E100066641E /* ContentView.swift */,
 				89E66BBA29AE7E130066641E /* Assets.xcassets */,
@@ -125,6 +134,25 @@
 				89E66BD329AE7E140066641E /* FacebookUITestsLaunchTests.swift */,
 			);
 			path = FacebookUITests;
+			sourceTree = "<group>";
+		};
+		89E66BE029AEAF560066641E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				89E66BE529AF88430066641E /* Components */,
+				89E66BE129AEAF800066641E /* Stories.swift */,
+				89E66BE329AF80650066641E /* Posts.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		89E66BE529AF88430066641E /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				89E66BE629AF88590066641E /* PostView.swift */,
+				89E66BE829AF891B0066641E /* StoryView.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +285,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89E66BE929AF891B0066641E /* StoryView.swift in Sources */,
+				89E66BE229AEAF800066641E /* Stories.swift in Sources */,
 				89E66BB929AE7E100066641E /* ContentView.swift in Sources */,
 				89E66BB729AE7E100066641E /* FacebookApp.swift in Sources */,
+				89E66BE729AF88590066641E /* PostView.swift in Sources */,
+				89E66BE429AF80650066641E /* Posts.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
